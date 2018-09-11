@@ -42,6 +42,7 @@ void QWE_wordCount::MYscanf(char s[]) {  // 输入总控制台
 	}
 }
 int QWE_wordCount::CountChar() {
+	if (num_line == 0)return 0;
 	int ret = 0;
 	rep(i, 0, num_line) {
 		int lim = line[i].size();
